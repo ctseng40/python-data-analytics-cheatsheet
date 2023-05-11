@@ -12,6 +12,6 @@
 8. [Conclusion and Future Works](#conclusion)
 
 ## Installation
-Detailed installation guide can be found [here]([http://www.numpy.org](https://numpy.org/install/)).
+Detailed installation guide can be found [here](https://numpy.org/install/).
 
 
