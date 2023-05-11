@@ -4,12 +4,7 @@
 ## Table of Contents
 1. [Installation](#introduction)
 2. [Importing NumPy](#importing-numpy)
-3. [Dataset](#dataset)
-4. [Model Training](#modeltraining)
-5. [Model Profiling and Debugging](#model-profiling-and-debugging)
-6. [Model Deployment](#model-deployment)
-7. [Inference](#inference)
-8. [Conclusion and Future Works](#conclusion)
+3. [Creating Arrays](#creating-arrays)
 
 ## Installation
 
@@ -43,7 +38,39 @@ pip install numpy
 import numpy as np
 ```
 
+## Creating Arrays
 
+```
+# 1D Array
+a = np.array([1, 2, 3]) 
+>>> [1 2 3]
+
+# 2D Array
+b = np.array([(1, 2, 3), (4, 5, 6)]) 
+>>> [[1 2 3]
+     [4 5 6]]
+     
+# Create an array of zeros
+zeros = np.zeros((3, 4)) 
+
+# Create an array of ones
+ones = np.ones((3, 4)) 
+
+# Create an array of evenly spaced values (step value)
+c = np.arange(0, 30, 5) 
+
+# Create an array of evenly spaced values (number of samples)
+d = np.linspace(0, 1, 12) 
+
+# Create a constant array
+e = np.full((2, 2), 7) 
+
+# Create a 2x2 identity matrix
+f = np.eye(2) 
+
+# Create an array with random values
+g = np.random.random((2, 2)) 
+```
 
 
 
