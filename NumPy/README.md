@@ -95,11 +95,12 @@ f = np.eye(2)
      [0. 1.]]
 ```
 
-Create an array with random values (Return random floats in the half-open interval [0.0, 1.0))
+Create an array with random values (Return random floats in the half-open interval `[0.0, 1.0)`)
 ```
 g = np.random.random((2, 2)) 
 >>> [[0.79147008 0.658632  ]
      [0.63582353 0.14000391]]
 ```
+
 
 
