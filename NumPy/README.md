@@ -102,5 +102,53 @@ g = np.random.random((2, 2))
      [0.63582353 0.14000391]]
 ```
 
+## Inspecting Your Array
+
+Array dimensions
+```
+array_2d = np.array([(1, 2, 3), (4, 5, 6)])
+array_2d.shape
+>>> (2, 3)
+```
+
+Length of array
+```
+len(array_2d)
+>>> 2
+```
+
+Number of array dimensions
+```
+array_2d.ndim
+>>> 2
+
+array_3d = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+>>> [[[ 1  2  3]
+      [ 4  5  6]]
+
+     [[ 7  8  9]
+      [10 11 12]]]
+array_3d.ndim
+>>> 3
+```
+
+Number of array elements
+```
+array_2d.size
+>>> 6
+```
+
+Data type of array elements
+```
+array_2d.dtype
+>>> dtype('int64')
+```
+
+Convert an array to a different type
+```
+array_2d.astype(int)
+>>> array([[1, 2, 3],
+           [4, 5, 6]])
+```
 
 
