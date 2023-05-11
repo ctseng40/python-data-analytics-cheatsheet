@@ -12,6 +12,7 @@
 8. [Conclusion and Future Works](#conclusion)
 
 ## Installation
+
 Detailed installation guide can be found [here](https://numpy.org/install/).
 
 **CONDA**
@@ -28,7 +29,9 @@ $ conda config --env --add channels conda-forge
 # The actual install command
 $ conda install numpy
 ```
+
 **PIP**
+
 If you use pip, you can install NumPy with:
 ```
 $ pip install numpy
