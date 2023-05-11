@@ -10,7 +10,7 @@
 6. [Array Manipulation](#Array-Manipulation)
 7. [Aggregate Functions](#Aggregate-Functions)
 8. [Copying Arrays](#Copying-Arrays)
-9. [Subsetting, Slicing, Indexing](#Subsetting,-Slicing,-Indexing)
+9. [Subsetting, Slicing, Indexing](#Subsetting-Slicing-Indexing)
 
 ## Installation
 
