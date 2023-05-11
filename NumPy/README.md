@@ -5,6 +5,12 @@
 1. [Installation](#introduction)
 2. [Importing NumPy](#importing-numpy)
 3. [Creating Arrays](#creating-arrays)
+4. [Inspecting Your Array](#Inspecting-Your-Array)
+5. [Array Mathematics](#Array-Mathematics)
+6. [Array Manipulation](#Array-Manipulation)
+7. [Aggregate Functions](#Aggregate-Functions)
+8. [Copying Arrays](#Copying-Arrays)
+9. [Subsetting, Slicing, Indexing](#Subsetting,-Slicing,-Indexing)
 
 ## Installation
 
@@ -275,3 +281,125 @@ b[::-1]
 >>> array([6, 5, 4, 3, 2])
 ```
 
+## Aggregate Functions
+Array-wise sum
+```
+a = np.array([(2, 3, 4), (4, 6, 8)])
+a.sum()
+>>> 27
+```
+
+Array-wise minimum value
+```
+a.min()
+>>> 2
+```
+
+Maximum value of an array row
+```
+a.max(axis=0)
+>>> array([4, 6, 8])
+```
+
+Cumulative sum of the elements
+```
+a.cumsum(axis=1)
+>>> array([[ 4, 10, 18],
+           [ 8, 20, 36]])
+```
+
+Mean
+```
+a.mean()
+>>> 4.5
+
+```
+
+Median
+```
+np.median(a)
+>>> 4.0
+```
+
+Correlation coefficient
+```
+np.corrcoef(a)
+>>> array([[1., 1.],
+           [1., 1.]])
+
+```
+
+Standard deviation
+```
+np.std(a)
+>>> 1.9790570145063195
+```
+
+## Copying Arrays
+Create a view of the array with the same data
+```
+a = np.array([(2, 3, 4), (4, 6, 8)])
+h = a.view()
+>>> [[2 3 4]
+     [4 6 8]]
+```
+
+Create a copy of the array
+```
+np.copy(a)
+```
+
+Create a deep copy of the array
+```
+h = a.copy()
+```
+
+## Subsetting, Slicing, Indexing
+Select the element at the 1st index
+```
+a = np.array([(2, 3, 4), (4, 6, 8)])
+a[1]
+>>> array([4, 6, 8])
+```
+
+Select the element at row 0 column 1
+```
+a[0, 1]
+>>> 3
+```
+
+Select items at index 0 and 1
+```
+a[0:2]
+>>> array([[2, 3, 4],
+           [4, 6, 8]])
+```
+
+Select items at rows 0 and 1 in column 1
+```
+a[0:2, 1]
+>> array([3, 6])
+```
+
+Select all items at row 0
+```
+a[:1]
+>>> array([[2, 3, 4]])
+```
+
+Same as [1,2,3]
+```
+a < 2
+>>> array([[False, False, False],
+           [False, False, False]])
+
+a[a<2]
+array([], dtype=int64)
+
+a < 6
+>>> array([[ True,  True,  True],
+           [ True, False, False]])
+
+a[a<6]
+>>> array([2, 3, 4, 4])
+```
