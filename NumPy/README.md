@@ -39,3 +39,11 @@ $ pip install numpy
 
 ## Importing NumPy
 
+```
+$ import numpy as np
+```
+
+
+
+
+
