@@ -3,7 +3,7 @@
 
 ## Table of Contents
 1. [Installation](#introduction)
-2. [Prerequisites](#prerequisites)
+2. [Importing NumPy](#importing numpy)
 3. [Dataset](#dataset)
 4. [Model Training](#modeltraining)
 5. [Model Profiling and Debugging](#model-profiling-and-debugging)
@@ -37,4 +37,5 @@ If you use pip, you can install NumPy with:
 $ pip install numpy
 ```
 
+## Importing NumPy
 
