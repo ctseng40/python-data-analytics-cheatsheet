@@ -15,6 +15,7 @@
 Detailed installation guide can be found [here](https://numpy.org/install/).
 
 **CONDA**
+
 If you use conda, you can install NumPy from the defaults or conda-forge channels:
 ```
 # Best practice, use an environment rather than install in the base env
